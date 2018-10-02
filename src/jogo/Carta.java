@@ -18,8 +18,8 @@ public class Carta {
         this.face = face;
         this.naipe = naipe;
     }
-    @Override
+  
     public String toString(){
-        return this.face + "de" + this.naipe; 
+        return face + " DE " + naipe ; 
     }
 }

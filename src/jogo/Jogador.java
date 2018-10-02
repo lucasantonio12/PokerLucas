@@ -5,27 +5,29 @@
  */
 package jogo;
 
+import java.util.Arrays;
+
 /**
  *
  * @author lucas
  */
 public class Jogador {
     private String nome;
-    private Carta cartas;
+    private Carta[] cartas;
     
     public Jogador(String nome){
         this.nome = nome;
     }
     
-    public void cartas(){
-        
+    public void setCartas(Carta[] cartas){
+        this.cartas = cartas;
     } 
     
     public void mostraCartas(){
         System.out.println("CARTAS DE " + nome);
         
-        for(int i=0; i < cartas.toString().length();i++){
-            cartas.toString();
+        for(Carta c: cartas){
+            System.out.println(c.toString());
         }
     
     }
