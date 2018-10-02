@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package jogo;
 
 import java.util.Scanner;
@@ -44,9 +40,9 @@ public class Jogo {
         
     }
     
-    public void distribuirCartas(){
+    public void distribuirCartas(int qtd){
          for (Jogador j: jogadores) {
-             j.setCartas(baralho.distribuirCartas(7));
+             j.setCartas(baralho.distribuirCartas(qtd));
          }
         
         
@@ -62,7 +58,7 @@ public class Jogo {
     public static void main(String[] args) {
         Jogo poker = new Jogo();
         poker.iniciarjogo();
-        poker.distribuirCartas();
+        poker.distribuirCartas(7);
         poker.mostraCartas();
     }
 }
