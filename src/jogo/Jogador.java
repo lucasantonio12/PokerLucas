@@ -24,7 +24,7 @@ public class Jogador {
     } 
     
     public void mostraCartas(){
-        System.out.println("CARTAS DE " + nome);
+        System.out.println("CARTAS DE " + nome.toUpperCase());
         
         for(Carta c: cartas){
             System.out.println(c.toString());
