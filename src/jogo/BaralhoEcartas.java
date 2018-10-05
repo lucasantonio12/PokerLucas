@@ -28,6 +28,7 @@ public class BaralhoEcartas {
                  baralho[contador++] = new Carta(face,naipe); 
              }
          }
+        contador = 0;
      }
     
      public void mostrarBaralho(){
@@ -55,7 +56,7 @@ public class BaralhoEcartas {
          System.out.println("DISTRIBUINDO CARTAS!! EI ESTOU VENDO VC TENTANDO ESCONDER ESSA CARTA AI! ");
          
          Carta[] recebeCarta = new Carta[qtd];
-          contador = 0;
+       
             for(int i=0; i < recebeCarta.length ; i++){
                 recebeCarta[i] = baralho[contador++];
             }
